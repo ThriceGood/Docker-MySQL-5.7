@@ -1,0 +1,1 @@
+docker exec -ti mysql-57_db_1 /bin/bash
