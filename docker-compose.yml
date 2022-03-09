@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  db:
+    build: .
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - db_data:/var/lib/mysql
+    restart:
+      - always
+
+volumes:
+  db_data:
